@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewEncabezado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEncabezado"
+        android:hint="Nombre del estudiante"
+        android:textColorHint="@color/black"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombre"
+        android:hint="Nota 1 (15%)"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota1"
+        android:hint="Nota 2 (15%)"
+        android:textColorHint="@color/black"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota2"
+        android:hint="Nota 3 (20%)"
+        android:textColorHint="@color/black"
+
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNota4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota3"
+        android:hint="Nota 4 (25%)"
+        android:textColorHint="@color/black"
+
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNota5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota4"
+        android:hint="Nota 5 (25%)"
+        android:textColorHint="@color/black"
+
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNota5"
+        android:text="Calcular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalcular"
+        android:text="Limpiar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLimpiar"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="Resultado aparecerá aquí" />
+</RelativeLayout>
